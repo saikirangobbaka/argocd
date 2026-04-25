@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-app
 spec:
-  replicas: 3   # <-- number of pod replicas
+  replicas: 5   # <-- number of pod replicas
   selector:
     matchLabels:
       app: my-app
