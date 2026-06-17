@@ -22,3 +22,9 @@ spec:
           image: tomcat:10.1
           ports:
             - containerPort: 8080
+          env:
+          - name: MYSQL_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mysql-password
+                key: password
